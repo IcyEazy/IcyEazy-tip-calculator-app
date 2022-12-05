@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+
+    <div class="calculator-body">
+      <div class="amount-person">
+        <div class="bill-input">
+          <p class="num-of-amount"><span>Bill</span> <span class="error-bill">Can't be zero</span></p>
+          <div id="input-amount" class="input-forms">
+            <img src="./images/icon-dollar.svg" alt="dollar">
+            <input class="input-entry" type="number" id="amount" placeholder="0">
+          </div>
+        </div>
+        <div class="tip-options">
+          <p>Select Tip %</p>
+          <div class="top-tip-btns">
+            <button class="tip-btns five" type="button">5%</button>
+            <button class="tip-btns middle ten" type="button">10%</button>
+            <button class="tip-btns fifteen" type="button">15%</button>
+          </div>
+          <div class="bottom-tip-btns">
+            <button class="tip-btns twenty" type="button">20%</button>
+            <button class="tip-btns middle twenty-five" type="button">25%</button>
+            <input id="custom" class="custom" type="number" name="number" placeholder="Custom">
+          </div>
+        </div>
+        <div class="mobile-tip-options">
+          <p>Select Tip %</p>
+          <div class="top-tip-btns">
+            <button  class="tip-btns btn five" type="button">5%</button>
+            <button class="tip-btns ten" type="button">10%</button>
+          </div>
+          <div class="middle-tip-btns">
+            <button class="tip-btns btn fifteen" type="button">15%</button>
+            <button class="tip-btns twenty" type="button">20%</button>
+          </div>
+          <div class="bottom-tip-btns">
+            <button class="tip-btns btn twenty-five" type="button">25%</button>
+            <input id="mobile-custom" class="custom" type="number" name="number" placeholder="Custom">
+          </div>
+        </div>
+
+        <div class="people">
+          <p class="num-of-people"><span>Number of People</span> <span class="error">Can't be zero</span></p>
+          <div id="input-people" class="input-forms">
+            <img src="./images/icon-person.svg" alt="dollar">
+            <input class="input-entry" type="number" id="people" placeholder="0">
+          </div>
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="amount-total">
+          <div class="tip-amount">
+            <div class="person"><p>Tip Amount</p><p>/ person</p></div>
+            <div class="result-div">$<span id="result-num-person">0.00</span></div>
+          </div>
+          <div class="total">
+            <div class="person"><p>Total</p><p>/ person</p></div>
+            <div class="result-div">$<span id="result-num-total">0.00</span></div>
+          </div>
+        </div>
+        <button class="btn-reset" type="reset">RESET</button>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#">Adigun Israel Collins</a>.
+  </div>
+
+  <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
